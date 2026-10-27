@@ -18,3 +18,27 @@ body{overflow-x:hidden}main,section,.hero-copy,.player-center{min-width:0}img{ma
 @media(max-width:480px){main{padding-left:18px;padding-right:18px}h1{font-size:27px}.hero{min-height:330px}.hero-copy{padding:25px 22px;max-width:100%}.hero h2{font-size:43px}.hero-art{width:58%;right:-87px;top:8px;opacity:.28}.hero p{position:relative}.hero-copy .pill{font-size:7px}.hero-foot{position:relative}.moods{margin-left:-18px;margin-right:-18px;padding-left:18px;padding-right:18px}.song-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:23px 14px}.section-top h2{font-size:20px}.breadcrumbs:before{margin-right:14px}.breadcrumbs span{padding:0 8px}.player{padding-left:12px;padding-right:12px;gap:8px}.now-playing{width:51%;gap:8px}.now-art{width:39px;height:39px}.now-playing strong{font-size:11px}.now-playing small{font-size:9px}.player-center{width:47%}.controls{gap:4px}.controls .icon-button{min-width:31px}.play-main{height:36px;width:36px}.progress{gap:5px;font-size:8px}#searchForm>button{padding:10px;font-size:10px}}
 @media(max-width:350px){main{padding-left:13px;padding-right:13px}h1{font-size:24px}.hero h2{font-size:39px}.hero-copy{padding-left:19px}.hero p{font-size:10px}.breadcrumbs{font-size:10px}.breadcrumbs:before{font-size:23px;margin-right:10px}.song-grid{gap:20px 11px}.now-art{display:none}.now-playing{width:48%}.player-center{width:50%}.section-top h2{font-size:18px}}
 @media(hover:none){.card-play{opacity:1;transform:none}.mood:hover{transform:none}}
+/* Softer, low-glare palette and account controls */
+:root{--ink:#38433d;--paper:#f5f5ef;--accent:#718b73}body{background:#f5f5ef;color:#35423a}aside{background:#eeefe8} .hero{background:#dce7d8}.player{background:#f2f3ed} .song-card{background:#fffefa}.auth-button{border:1px solid #bdc8ba;background:#fffefa;border-radius:20px;padding:8px 13px;color:#3e5142;cursor:pointer}.auth-button:hover{background:#e3ebdf}#authDialog{border:0;border-radius:20px;padding:32px;width:min(420px,calc(100% - 36px));background:#fafaf5;color:#344239;box-shadow:0 20px 70px #24332435}#authDialog::backdrop{background:#28362b77}#authDialog h2{font-size:26px}#authForm{display:grid;gap:12px}#authForm input{padding:13px;border:1px solid #cbd2c6;border-radius:10px;background:white}#authForm .dark-button{margin-top:5px}.auth-note{font-size:12px;color:#718075;line-height:1.5}.close-dialog{float:right;border:0;background:transparent;font-size:25px;cursor:pointer}
+/* Accessible light-green theme: strengthen contrast across all text and controls */
+:root{--ink:#233c2e;--paper:#f2f8ef;--accent:#497a55}
+html,body{background:#f2f8ef!important;color:#20382a!important}
+body,main,aside,.player{color:#20382a}
+aside{background:#e4f0e2!important;border-right:1px solid #c6d9c3}
+main{background:#f2f8ef}
+header,.mood,.song-card,.player,.now-playing,.player-center,.player-right{color:#20382a!important}
+.hero{background:#d4e9d0!important;color:#20382a!important}
+.hero h2,.hero p,.page-heading h1,.section-top h2,.mood-head h3,.song-card h3,.song-card p,.breadcrumbs,.breadcrumbs b,header,.workspace,.side-label,.profile,.profile small,footer,footer span,.track-meta,.now-playing strong,.now-playing small,#status{color:#294434!important}
+.eyebrow,.song-card .track-meta span:first-child,.preview-label{color:#52745a!important}
+.mood{background:#e6f1e3!important;border:1px solid #c5d9c1!important;color:#294434!important}
+.mood.selected,.mood:hover{background:#c9e2c5!important;color:#1d3d28!important}
+.dark-button,.searchForm button,#searchForm button{background:#315c3b!important;color:#fff!important}
+.auth-button{background:#fff!important;color:#24452e!important;border:1px solid #9db99c!important}
+#searchForm{background:#fff!important;border:1px solid #b7cbb5!important}
+#searchForm input{color:#20382a!important}#searchForm input::placeholder{color:#687d6a!important;opacity:1}
+#playlistDialog,#authDialog{background:#f8fcf6!important;color:#20382a!important}
+#playlistChoices button{color:#20382a!important}
+.song-card{background:#fbfef9!important;border:1px solid #dce8d9}
+.player{background:#e6f0e3!important;border-top:1px solid #c7d9c3}
+.text-button,.icon-button{color:#315c3b!important}
+footer{border-top:1px solid #cadbc7}
